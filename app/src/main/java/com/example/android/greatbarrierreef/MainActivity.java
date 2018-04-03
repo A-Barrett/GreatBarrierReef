@@ -34,9 +34,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void getToast() {
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -65,10 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initializeViews() {
     }
 
-    resetAllUserInputChoices() {
-
-    }
-
     //This method gets question one user input answer
     private String getQuestionOneUserInput() {
         return nameInput.getText().toString();
@@ -78,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void checkQuestionOneAnswers() {
         String name = nameInput.getText().toString();
         if ("Australia".equalsIgnoreCase( name )) {
-            correctAnswers += 1;
+            correctAnswers += 20;
         } else if (TextUtils.isEmpty( name )) {
             nameInput.setError( "Please answer question one" );
 
@@ -89,14 +82,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void checkQuestionTwoAnswers() {
         boolean isQuestionTwotrueChecked = radioButton1True.isChecked();
         if (isQuestionTwotrueChecked) {
-            correctAnswers += 1;
+            correctAnswers += 20;
         }
     }
 
     //This method checks question three user answer
     private void checkQuestionThreeAnswers() {
         if (climate.isChecked() && pollution.isChecked() && fishing.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers += 20;
         }
     }
 
@@ -105,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RadioButton radioButton5true = findViewById( R.id.RGbutton5true );
         boolean isQuestionFivetrueChecked = radioButton5true.isChecked();
         if (isQuestionFivetrueChecked) {
-            correctAnswers += 1;
+            correctAnswers += 20;
         }
     }
 
@@ -114,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RadioButton radioButton3true = findViewById( R.id.RGbutton3true );
         boolean isQuestionFourtrueChecked = radioButton3true.isChecked();
         if (isQuestionFourtrueChecked) {
-            correctAnswers += 1;
+            correctAnswers += 20;
         }
     }
 
@@ -132,11 +125,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         getQuestionOneUserInput();
         checkAllQuestions();
-        Toast.makeText( MainActivity.this, "Correct Answers: " + correctAnswers + "/5", Toast.LENGTH_LONG ).show();
+        Toast.makeText( MainActivity.this, "YOU SCORED " + correctAnswers + "%", Toast.LENGTH_LONG ).show();
         {
             correctAnswers = 0;
         }
     }
 }
+
+
+//TODO: Customize Toast
+
 
 
