@@ -6,7 +6,7 @@
     <string name="textView_space">2) You can see the Great Barrier Reef from space.</string>
     <string name="radioButton1True">True</string>
     <string name="radioButton2false">False</string>
-    <string name="TextView_primary_threat">3) What is the primary threat to the Great Barrier Reef?</string>
+    <string name="TextView_primary_threat">3) Which of the following are threats to the Great Barrier Reef?</string>
     <string name="climate_change">Climate Change</string>
     <string name="pollution">Pollution</string>
     <string name="fishing">Fishing</string>
@@ -14,10 +14,11 @@
     <string name="button3_submit">Submit</string>
     <string name="seven_wonders">5) The Great Barrier Reef is one of the seven wonders of the world.</string>
     <string name="learn_to_help">To learn what you can do to help, please visit the following link \nhttps://www.nature.org/ourinitiatives/urgentissues/oceans/coral-reefs/ways-to-help-coral-reefs/index.htm</string>
-    <string name="Hint">Country (case-sensitive)</string>
+    <string name="Hint"> Country </string>
     <string name="RButton5True">True</string>
     <string name="RButton5False">False</string>
     <string name="RGbutton3True">True</string>
     <string name="RGbutton4False">False</string>
+    <string name="toastMessage1">Please enter an answer for question one</string>
 
 </resources>

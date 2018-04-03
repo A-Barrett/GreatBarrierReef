@@ -3,6 +3,7 @@
     <words>
       <w>addtext</w>
       <w>bbutton</w>
+      <w>buttontwo</w>
       <w>climateis</w>
       <w>finalstring</w>
       <w>fivetrue</w>
@@ -12,9 +13,11 @@
       <w>radiobutton</w>
       <w>threeclimate</w>
       <w>threefishing</w>
+      <w>threepollution</w>
       <w>threepolution</w>
       <w>trueis</w>
       <w>twotrue</w>
+      <w>videopath</w>
     </words>
   </dictionary>
 </component>

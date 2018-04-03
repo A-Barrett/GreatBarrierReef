@@ -10,6 +10,7 @@
     <dimen name="textView_textSize">18sp</dimen>
     <dimen name="textView1_paddingBottom">16dp</dimen>
     <dimen name="marginBottom">24dp</dimen>
+    <dimen name="textview_margin_top">16dp</dimen>
 
     //Buttons
     <dimen name="button1_text_size">24sp</dimen>
@@ -20,8 +21,6 @@
     <dimen name="Button_marginEnd">16dp</dimen>
 
     //Images
-    <dimen name="image_gbreef_height">217dp</dimen>
-    <dimen name="image_wildlife_height">400dp</dimen>
     <dimen name="image_climate_height">303dp</dimen>
     <dimen name="image_padding_bottom">24dp</dimen>
     <dimen name="image_map_height">410dp</dimen>

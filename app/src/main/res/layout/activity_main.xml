@@ -10,11 +10,11 @@
         android:background="@color/black"
         android:orientation="vertical">
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/Linear_marginBottom"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:freezesText="true"
             android:text="@string/welcome"
             android:textAlignment="center"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/Hint"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:textColorHint="@color/neon_green" />
 
         <ImageView
@@ -67,20 +67,20 @@
                 android:id="@+id/radioButton1True"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/radioButton1True"
                 android:textColor="@color/neon_green"
                 android:textSize="@dimen/radio_button_text_size"
-                android:textStyle="italic|bold"
-                android:checked="false"/>
+                android:textStyle="italic|bold" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/radioButton2false"
                 android:textColor="@color/neon_green"
                 android:textSize="@dimen/radio_button_text_size"
-                android:textStyle="bold"
-                android:checked="false"/>
+                android:textStyle="bold" />
 
         </RadioGroup>
 
@@ -89,6 +89,7 @@
             android:layout_height="@dimen/image_space_height"
             android:contentDescription="@null"
             android:src="@drawable/outer_space" />
+
 
         <TextView
             android:layout_width="match_parent"
@@ -110,6 +111,7 @@
             android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/pollution"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pollution"
@@ -118,6 +120,7 @@
             android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/fishing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/marginBottom"
@@ -131,7 +134,7 @@
             android:layout_height="@dimen/image_climate_height"
             android:contentDescription="@null"
             android:paddingBottom="@dimen/image_padding_bottom"
-            android:src="@drawable/climate2" />
+            android:src="@drawable/fish" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -150,31 +153,32 @@
                 android:textStyle="italic|bold" />
 
             <RadioGroup
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:id="@+id/RGbutton3true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="@string/RGbutton3True"
                     android:textColor="@color/neon_green"
-                    android:textSize="@dimen/radio_button_text_size"
-                    android:checked="false"/>
+                    android:textSize="@dimen/radio_button_text_size" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="@string/RGbutton4False"
                     android:textColor="@color/neon_green"
-                    android:textSize="@dimen/radio_button_text_size"
-                    android:checked="false"/>
+                    android:textSize="@dimen/radio_button_text_size" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/image_wildlife_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="333dp"
+                    android:layout_marginTop="@dimen/textview_margin_top"
                     android:contentDescription="@null"
-                    android:src="@drawable/reef_wildlife" />
+                    android:src="@drawable/clarion3" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -194,28 +198,28 @@
                         android:id="@+id/RGbutton5true"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:checked="false"
                         android:text="@string/RButton5True"
                         android:textColor="@color/neon_green"
                         android:textSize="@dimen/radio_button_text_size"
-                        android:textStyle="italic|bold"
-                        android:checked="false"/>
+                        android:textStyle="italic|bold" />
 
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:checked="false"
                         android:text="@string/RButton5False"
                         android:textColor="@color/neon_green"
                         android:textSize="@dimen/radio_button_text_size"
-                        android:textStyle="bold"
-                        android:checked="false"/>
+                        android:textStyle="bold" />
 
                 </RadioGroup>
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/image_gbreef_height"
+                    android:layout_height="203dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/gbreef" />
+                    android:src="@drawable/gbreef2" />
 
                 <Button
                     android:id="@+id/submitButton"
@@ -234,15 +238,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/Linear_marginTop"
                     android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginTop="@dimen/Linear_marginTop"
+                    android:autoLink="web"
                     android:text="@string/learn_to_help"
                     android:textAlignment="center"
                     android:textColor="@color/neon_green"
+                    android:textColorLink="@color/neon_green"
                     android:textSize="@dimen/textView_textSize"
-                    android:textStyle="italic|bold"
-                    android:autoLink="web"
-                    android:textColorLink="@color/neon_green"/>
+                    android:textStyle="italic|bold" />
 
             </RadioGroup>
         </LinearLayout>
