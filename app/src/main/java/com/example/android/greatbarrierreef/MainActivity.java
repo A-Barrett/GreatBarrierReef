@@ -1,21 +1,24 @@
 package com.example.android.greatbarrierreef;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-//This is my Udacity quiz app on the Great Barrier Reef
+
+//Udacity quiz app on the Great Barrier Reef
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //Declare variables for all views
+    /**
+     * This method declares variables for all views.
+     */
     String name;
     String toastMessage1;
     EditText nameInput;
@@ -25,13 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int correctAnswers = 0;
 
     public void submitButton(View view) {
-    }
-
-    public void showSoftKeyboard(View view) {
-        if (view.requestFocus()) {
-            InputMethodManager imm = (InputMethodManager) getSystemService( Context.INPUT_METHOD_SERVICE );
-            imm.showSoftInput( view, InputMethodManager.SHOW_IMPLICIT );
-        }
     }
 
     @Override
@@ -45,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         };
 
-        //This method identifies all views and sets their listeners.
         initializeViews();
         nameInput = findViewById( R.id.nameInput );
         submit = findViewById( R.id.submitButton );
@@ -59,15 +54,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RGbutton5true = findViewById( R.id.RGbutton5true );
     }
 
+    /**
+     * Identifies all views and their listeners.
+     */
     private void initializeViews() {
     }
 
-    //This method gets question one user input answer
+    /**
+     * Gets question one user input answer.
+     */
     private String getQuestionOneUserInput() {
         return nameInput.getText().toString();
     }
 
-    //This method checks answer for question one
+    /**
+     * Checks answer for question one.
+     */
     private void checkQuestionOneAnswers() {
         String name = nameInput.getText().toString();
         if ("Australia".equalsIgnoreCase( name )) {
@@ -78,7 +80,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //This method checks question two user choice
+    /**
+     * Checks question two user choice.
+     */
     private void checkQuestionTwoAnswers() {
         boolean isQuestionTwotrueChecked = radioButton1True.isChecked();
         if (isQuestionTwotrueChecked) {
@@ -86,14 +90,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //This method checks question three user answer
+    /**
+     * Checks question three user answer.
+     */
     private void checkQuestionThreeAnswers() {
         if (climate.isChecked() && pollution.isChecked() && fishing.isChecked()) {
             correctAnswers += 20;
         }
     }
 
-    //This method checks question four user choice
+    /**
+     * Checks question four user choice.
+     */
     private void checkQuestionFourAnswers() {
         RadioButton radioButton5true = findViewById( R.id.RGbutton5true );
         boolean isQuestionFivetrueChecked = radioButton5true.isChecked();
@@ -102,7 +110,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //This method checks question five user choice
+    /**
+     * Checks question five user choice.
+     */
     private void checkQuestionFiveAnswers() {
         RadioButton radioButton3true = findViewById( R.id.RGbutton3true );
         boolean isQuestionFourtrueChecked = radioButton3true.isChecked();
@@ -111,7 +121,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //This method checks all answers
+    /**
+     * Method checks all answers.
+     */
     private void checkAllQuestions() {
         checkQuestionOneAnswers();
         checkQuestionTwoAnswers();
@@ -120,7 +132,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkQuestionFiveAnswers();
     }
 
-    //This method checks answers, calculates score, and displays toast upon submit
+    /**
+     * Method checks answers, calculates score, and displays toast upon submit.
+     */
     @Override
     public void onClick(View v) {
         getQuestionOneUserInput();
@@ -135,5 +149,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 //TODO: Customize Toast
 //TODO: Custom Theme
+//TODO: Custom Icon
 
 
