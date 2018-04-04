@@ -12,8 +12,172 @@
     </style>
 
     <style name="MyTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorAccent">@color/waterBlue</item>
-        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimaryDark">@color/smokeBlue</item>
+    </style>
+
+    <style name="Header_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/Linear_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/textview_margin_top</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/TextView1_text_size</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/checkbox_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ll_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/Linear_marginBottom</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/Button_marginEnd</item>
+        <item name="android:layout_marginStart">@dimen/button3_margin_start</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingBottom">@dimen/buttonPaddingBottom</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/button1_text_size</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+
+    <style name="TextView1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:paddingBottom">@dimen/textView1_paddingBottom</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textView_textSize</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="TextView2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textView_textSize</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="EditText_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:fontFeatureSettings">@string/TextView_Reef_size</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:textColorHint">@color/blue</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/image_map_height</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="TextView3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textView_textSize</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="ImageView3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/image_climate_height</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:paddingBottom">@dimen/image_padding_bottom</item>
+    </style>
+
+    <style name="TextView4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/Linear_marginTop</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textView_textSize</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="RadioButton_true">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:checked">false</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/radio_button_text_size</item>
+    </style>
+
+    <style name="RadioButton_false">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:checked">false</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/radio_button_text_size</item>
+    </style>
+
+    <style name="ImageView4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">333dp</item>
+        <item name="android:layout_marginTop">@dimen/textview_margin_top</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="TextView5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/Linear_marginTop</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textView_textSize</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="TextView6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/Linear_marginTop</item>
+        <item name="android:autoLink">web</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColorLink">@color/blue</item>
+        <item name="android:textSize">@dimen/textView_textSize</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="imageView" parent="ImageView4">
+        <item name="android:layout_height">@dimen/image_layout_height</item>
+        <item name="android:contentDescription">@null</item>
     </style>
 
 </resources>

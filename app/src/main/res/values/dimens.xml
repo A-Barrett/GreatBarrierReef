@@ -22,8 +22,8 @@
 
     //Images
     <dimen name="image_climate_height">303dp</dimen>
-    <dimen name="image_padding_bottom">24dp</dimen>
+    <dimen name="image_padding_bottom">16dp</dimen>
     <dimen name="image_map_height">410dp</dimen>
-    <dimen name="image_space_height">406dp</dimen>
+    <dimen name="image_layout_height">207dp</dimen>
 
 </resources>

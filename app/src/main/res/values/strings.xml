@@ -19,6 +19,5 @@
     <string name="RButton5False">False</string>
     <string name="RGbutton3True">True</string>
     <string name="RGbutton4False">False</string>
-    <string name="toastMessage1">Please enter an answer for question one</string>
 
 </resources>
