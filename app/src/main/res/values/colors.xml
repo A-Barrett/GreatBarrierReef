@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="black">#000000</color>
     <color name="neon_green">#39ff14</color>
+    <color name="blue">#54b3ff</color>
+    <color name="waterBlue">#087dc7</color>
 </resources>
