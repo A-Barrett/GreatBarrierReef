@@ -20,11 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * This method declares variables for all views.
      */
     String name;
-    String toastMessage1;
     EditText nameInput;
     Button submit;
     CheckBox climate, pollution, fishing;
-    RadioButton radioButton1True, RGbutton3True, RGbutton5true;
+    RadioButton radioButton1True, RGbutton3True, RGbutton5true, northern, black, crown;
     int correctAnswers = 0;
 
     public void submitButton(View view) {
@@ -34,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
+
         new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         radioButton1True = findViewById( R.id.radioButton1True );
         RGbutton3True = findViewById( R.id.RGbutton3true );
         RGbutton5true = findViewById( R.id.RGbutton5true );
+        northern = findViewById( R.id.northern );
+        black = findViewById( R.id.black );
+        crown = findViewById( R.id.crown );
+
     }
 
     /**
@@ -73,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void checkQuestionOneAnswers() {
         String name = nameInput.getText().toString();
         if ("Australia".equalsIgnoreCase( name )) {
-            correctAnswers += 20;
+            correctAnswers += 15;
         } else if (TextUtils.isEmpty( name )) {
             nameInput.setError( "Please answer question one" );
 
@@ -86,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void checkQuestionTwoAnswers() {
         boolean isQuestionTwotrueChecked = radioButton1True.isChecked();
         if (isQuestionTwotrueChecked) {
-            correctAnswers += 20;
+            correctAnswers += 15;
         }
     }
 
@@ -95,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void checkQuestionThreeAnswers() {
         if (climate.isChecked() && pollution.isChecked() && fishing.isChecked()) {
-            correctAnswers += 20;
+            correctAnswers += 25;
         }
     }
 
@@ -106,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RadioButton radioButton5true = findViewById( R.id.RGbutton5true );
         boolean isQuestionFivetrueChecked = radioButton5true.isChecked();
         if (isQuestionFivetrueChecked) {
-            correctAnswers += 20;
+            correctAnswers += 15;
         }
     }
 
@@ -117,7 +121,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RadioButton radioButton3true = findViewById( R.id.RGbutton3true );
         boolean isQuestionFourtrueChecked = radioButton3true.isChecked();
         if (isQuestionFourtrueChecked) {
-            correctAnswers += 20;
+            correctAnswers += 15;
+        }
+    }
+
+    /**
+     * Checks question six user choice.
+     */
+    private void checkQuestionSixAnswers() {
+        if (crown.isChecked()) {
+            correctAnswers += 15;
         }
     }
 
@@ -130,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkQuestionThreeAnswers();
         checkQuestionFourAnswers();
         checkQuestionFiveAnswers();
+        checkQuestionSixAnswers();
     }
 
     /**
@@ -146,9 +160,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 }
 
+//TODO: Finish Styles and Theme
+//TODO: Implement Pop_Up Window
 
-//TODO: Customize Toast
-//TODO: Custom Theme
-//TODO: Custom Icon
 
 

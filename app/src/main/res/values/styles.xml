@@ -37,7 +37,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ll_main">
+    <style name="linear_main">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/Linear_marginBottom</item>
@@ -45,7 +45,7 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="ll">
+    <style name="linear_body">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
@@ -102,31 +102,12 @@
         <item name="android:contentDescription">@null</item>
     </style>
 
-    <style name="TextView3">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@color/blue</item>
-        <item name="android:textSize">@dimen/textView_textSize</item>
-        <item name="android:textStyle">italic|bold</item>
-    </style>
 
     <style name="ImageView3">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/image_climate_height</item>
         <item name="android:contentDescription">@null</item>
         <item name="android:paddingBottom">@dimen/image_padding_bottom</item>
-    </style>
-
-    <style name="TextView4">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/Linear_marginTop</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/blue</item>
-        <item name="android:textSize">@dimen/textView_textSize</item>
-        <item name="android:textStyle">italic|bold</item>
     </style>
 
     <style name="RadioButton_true">
@@ -178,6 +159,11 @@
     <style name="imageView" parent="ImageView4">
         <item name="android:layout_height">@dimen/image_layout_height</item>
         <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="imageView_mgBottom" parent="imageView">
+        <item name="android:contentDescription">@null</item>
+        <item name="android:layout_marginBottom">16dp</item>
     </style>
 
 </resources>

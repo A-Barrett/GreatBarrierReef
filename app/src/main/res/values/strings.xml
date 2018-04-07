@@ -12,12 +12,17 @@
     <string name="fishing">Fishing</string>
     <string name="TextView_Reef_size">4) The Great Barrier Reef is about the size of 70 million football fields!</string>
     <string name="button3_submit">Submit</string>
-    <string name="seven_wonders">5) The Great Barrier Reef is one of the seven wonders of the world.</string>
+    <string name="seven_wonders">5) The Great Barrier Reef is one of the seven natural wonders of the world.</string>
     <string name="learn_to_help">To learn what you can do to help, please visit the following link \nhttps://www.nature.org/ourinitiatives/urgentissues/oceans/coral-reefs/ways-to-help-coral-reefs/index.htm</string>
     <string name="Hint"> Country </string>
     <string name="RButton5True">True</string>
     <string name="RButton5False">False</string>
     <string name="RGbutton3True">True</string>
     <string name="RGbutton4False">False</string>
+    <string name="creature">6) The outbreak of which creature has been considered a threat to the Great Barrier Reef?</string>
+    <string name="the_northern_pacific_seastar">The Northern Pacific Seastar</string>
+    <string name="the_black_striped_mussel">The Black Striped Mussel</string>
+    <string name="crown_of_thorns_starfish">Crown of Thorns Starfish</string>
+    <string name="thank_you_for_playing">Thank you for playing!</string>
 
 </resources>

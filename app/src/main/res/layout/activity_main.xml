@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout style="@style/ll_main">
+    <LinearLayout
+        style="@style/linear_main"
+        android:background="@color/black">
 
         <TextView
             android:id="@+id/Header_text_view"
@@ -54,7 +56,7 @@
 
         <TextView
             android:id="@+id/TextView3"
-            style="@style/TextView3"
+            style="@style/TextView2"
             android:text="@string/TextView_primary_threat" />
 
         <CheckBox
@@ -77,12 +79,12 @@
             android:contentDescription="@null"
             android:src="@drawable/fish" />
 
-        <LinearLayout style="@style/ll">
+        <LinearLayout style="@style/linear_body">
 
 
             <TextView
                 android:id="@+id/TextView4"
-                style="@style/TextView4"
+                style="@style/TextView2"
                 android:text="@string/TextView_Reef_size" />
 
             <RadioGroup
@@ -106,7 +108,8 @@
                 <TextView
                     android:id="@+id/TextView5"
                     style="@style/TextView5"
-                    android:text="@string/seven_wonders" />
+                    android:text="@string/seven_wonders"
+                    android:textAllCaps="true" />
 
                 <RadioGroup
                     android:layout_width="wrap_content"
@@ -125,9 +128,40 @@
                 </RadioGroup>
 
                 <ImageView
-                    style="@style/imageView"
+                    style="@style/imageView_mgBottom"
+                    android:src="@drawable/gbreef2"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    style="@style/TextView1"
+                    android:text="@string/creature" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/northern"
+                        style="@style/CheckBox"
+                        android:text="@string/the_northern_pacific_seastar" />
+
+                    <RadioButton
+                        android:id="@+id/black"
+                        style="@style/CheckBox"
+                        android:text="@string/the_black_striped_mussel" />
+
+                    <RadioButton
+                        android:id="@+id/crown"
+                        style="@style/CheckBox"
+                        android:text="@string/crown_of_thorns_starfish" />
+
+                </RadioGroup>
+
+
+                <ImageView
+                    style="@style/ImageView3"
                     android:contentDescription="@null"
-                    android:src="@drawable/gbreef2" />
+                    android:src="@drawable/crown_thorns2" />
 
                 <Button
                     android:id="@+id/submitButton"
