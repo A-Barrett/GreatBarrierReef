@@ -11,8 +11,9 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 
-//Udacity quiz app on the Great Barrier Reef
-
+/**
+ * Udacity quiz app on the Great Barrier Reef
+ */
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         };
 
-        initializeViews();
         nameInput = findViewById( R.id.nameInput );
         submit = findViewById( R.id.submitButton );
         submit.setOnClickListener( this );
@@ -59,12 +59,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * Identifies all views and their listeners.
-     */
-    private void initializeViews() {
-    }
-
-    /**
      * Gets question one user input answer.
      */
     private String getQuestionOneUserInput() {
@@ -79,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if ("Australia".equalsIgnoreCase( name )) {
             correctAnswers += 15;
         } else if (TextUtils.isEmpty( name )) {
-            nameInput.setError( "Please answer question one" );
+            nameInput.setError( getString( R.string.answer_question ) );
 
         }
     }
@@ -107,8 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Checks question four user choice.
      */
     private void checkQuestionFourAnswers() {
-        RadioButton radioButton5true = findViewById( R.id.RGbutton5true );
-        boolean isQuestionFivetrueChecked = radioButton5true.isChecked();
+        boolean isQuestionFivetrueChecked = RGbutton5true.isChecked();
         if (isQuestionFivetrueChecked) {
             correctAnswers += 15;
         }
@@ -118,8 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Checks question five user choice.
      */
     private void checkQuestionFiveAnswers() {
-        RadioButton radioButton3true = findViewById( R.id.RGbutton3true );
-        boolean isQuestionFourtrueChecked = radioButton3true.isChecked();
+        boolean isQuestionFourtrueChecked = RGbutton3True.isChecked();
         if (isQuestionFourtrueChecked) {
             correctAnswers += 15;
         }
